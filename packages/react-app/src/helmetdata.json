@@ -1,0 +1,16 @@
+{
+  "app": {
+    "title": "Anti-Ape",
+    "description": "a dummy description about this page",
+    "keywords": "test, dummy, data",
+    "robots": "",
+    "canonicalUrl": "http://localhost:8300/"
+  },
+  "home": {
+    "title": "Home",
+    "description": "a dummy description about this page",
+    "keywords": "test, dummy, data",
+    "robots": "",
+    "canonicalUrl": ""
+  }
+}

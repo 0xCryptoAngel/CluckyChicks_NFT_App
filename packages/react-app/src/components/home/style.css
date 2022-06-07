@@ -1,0 +1,1257 @@
+/* header style */
+.header {
+    min-height: 97px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.discord,
+.twitter,
+.mailbox {
+    border: 3px solid;
+    padding: 11px;
+    border-radius: 50%;
+    display: flex;
+    width: max-content;
+    height: fit-content;
+}
+
+.head-contact a:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.head-contact a {
+    color: #000;
+}
+
+.head-contact {
+    display: flex;
+}
+
+.head-contact span {
+    margin: 0 5px;
+}
+
+.logo img {
+    width: 140px;
+    height: 77px;
+}
+
+.connect_status {
+    text-decoration: none;
+    background-color: black;
+    border-radius: 100px;
+    color: #ffe14b;
+    font-size: 20px;
+    font-family: "Titan One", Sans-serif;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.connect_status:hover {
+    transform: scale(1.2);
+    transition-timing-function: cubic-bezier(0.47, 2.02, .31, -.36);
+}
+
+.mainmenu {
+    width: inherit;
+    display: block;
+    margin: 0 14px;
+}
+
+.desktopMenu ul {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.desktopMenu li {
+    display: inline;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.desktopMenu li:not(:last-child):after {
+    content: "";
+    border-left: 2px dotted #000;
+    height: 40%;
+    margin-left: 20px;
+}
+
+.desktopMenu li a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Titan One", Sans-serif;
+    color: #000;
+}
+
+.desktopMenu a:hover {
+    display: block;
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+.arrow {
+    width: 100%;
+    height: 22px;
+    background-image: url("../../image/arrows.svg");
+    background-repeat: repeat-x;
+}
+
+@media (min-width: 769px) {
+    .mobileMenu {
+        display: none;
+    }
+
+    .desktopMenu ul {
+        display: flex;
+    }
+}
+
+@media (max-width: 1024px) {
+    .head-contact {
+        visibility: hidden;
+    }
+
+    .desktopMenu ul {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .head-contact {
+        display: none;
+    }
+
+    .header {
+        display: block;
+        height: auto;
+    }
+
+    .logo img {
+        width: 30%;
+        height: auto;
+        margin: 40px;
+    }
+
+    .connect_status {
+        font-size: 15px;
+        padding: 13px 30px;
+        margin-bottom: 30px;
+    }
+
+    .top_arr {
+        margin-bottom: 20px;
+    }
+
+    .bottom_arr {
+        margin-top: 10px;
+    }
+
+    .mainmenu {
+        margin: 0;
+    }
+
+    .desktopMenu ul {
+        display: none;
+    }
+
+    .mobile_icon {
+        background-color: #000;
+        display: block;
+        margin: auto;
+        width: fit-content;
+        border-radius: 3px;
+        padding: 5px 5px 2px 5px;
+    }
+
+    .mobile_ul {
+        background-color: #000;
+        overflow: hidden;
+        transition: max-height 0.5s cubic-bezier(1, 0, 1, 0);
+        height: auto;
+        max-height: 9999px;
+        margin-top: 10px;
+    }
+
+    .mobile_ul.collapsed {
+        max-height: 0;
+        transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+    }
+
+    .mobile_ul ul {
+        display: block !important;
+        margin: 0px;
+        padding: 0;
+    }
+
+    .mobile_ul li {
+        display: block;
+    }
+
+    .mobile_ul li:hover {
+        background-color: #55595c;
+    }
+
+    .mobile_ul li a {
+        color: #ffe14b !important;
+        border: none !important;
+        font-size: 26px;
+        font-family: "Titan One", Sans-serif;
+        text-decoration: none;
+    }
+
+}
+
+/* Mint style */
+.mintTitle {
+    font-size: 70px;
+    font-family: "Titan One", Sans-serif;
+    margin: 33px 0 -10px 0;
+    color: #000;
+}
+
+.mintSubtitle {
+    font-family: "Exo 2", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    color: #000;
+    line-height: 22px;
+    margin-bottom: 0;
+}
+
+.mintSubtitle1 {
+    font-family: "Exo 2", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    color: #000;
+    line-height: 22px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.mint-image img {
+    width: 100%;
+}
+
+.mint-count {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.mint-count h2 {
+    border: 3px solid #000;
+    border-radius: 10px;
+    font-family: "Exo 2", Sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding: 2px 17px;
+    margin: 0 50px;
+    font-size: 25px;
+    color: #000;
+}
+
+.mint-count a {
+    padding: 3px 15px;
+    font-size: 25px;
+    font-family: "Titan One", Sans-serif;
+    font-weight: bold;
+    background: #000;
+    color: #ffe14b;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.mint-count a:hover {
+    background-color: #55595c;
+    cursor: pointer;
+}
+
+.mint-btn {
+    margin: 20px;
+    cursor: pointer;
+}
+
+.mint-btn a {
+    padding: 7px 30px;
+    font-size: 25px;
+    font-family: "Titan One", Sans-serif;
+    font-weight: inherit;
+    background: #000;
+    color: #ffe14b;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.mint-btn a:hover {
+    background-color: #55595c;
+    cursor: pointer;
+}
+
+.referral-input {
+    background-color: #ffe14b;
+    border-radius: 5px;
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .mintTitle {
+        font-size: 39px;
+    }
+
+    .mintSubtitle,
+    .mintSubtitle1 {
+        font-size: 15px;
+    }
+}
+
+/* Terms of Service style */
+.ant-modal-header {
+    background: #ffe14b !important;
+    border-bottom: none !important;
+}
+
+.ant-modal-title {
+    font-family: "Titan One", Sans-serif;
+    font-size: 24px !important;
+}
+
+.ant-modal-body {
+    background: #ffe14b;
+    overflow-y: scroll;
+    height: 70vh;
+
+}
+
+.ant-modal-body h3 {
+    font-family: "Titan One", Sans-serif;
+}
+
+.ant-modal-footer {
+    background: #ffe14b !important;
+    border-top: none !important;
+}
+
+.ant-modal-body::-webkit-scrollbar {
+    width: 5px;
+}
+
+.ant-modal-body::-webkit-scrollbar-track {
+    background: #ffe14b;
+    border-radius: 100px;
+}
+
+.ant-modal-body::-webkit-scrollbar-thumb {
+    background: #afaeae;
+    border-radius: 100px;
+}
+
+
+/* Stake style */
+.stakeContainer {
+    display: flex;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+.joinBox {
+    width: 50%;
+    border-right: 3px solid #000;
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+}
+
+.joinBox h1 {
+    font-family: "Titan One", Sans-serif;
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: inherit;
+    color: #000;
+}
+
+.joinBox p {
+    font-family: "Exo 2", Sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 50px 30px;
+    line-height: 35px;
+    color: #000;
+}
+
+.joinBox a {
+    text-decoration: none;
+    background-color: black;
+    border-radius: 100px;
+    color: #ffe14b;
+    font-size: 18px;
+    font-family: "Titan One", Sans-serif;
+    padding: 15px 30px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.stakeBox {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.innerstakeBox {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.imgBox {
+    padding: 10px;
+}
+
+.imgBox img {
+    width: 90%;
+    border-radius: 20px;
+}
+
+.stakeText {
+    font-family: "Titan One", Sans-serif;
+    font-size: 45px;
+    color: #000;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.stakeBox p {
+    margin: auto;
+}
+
+.imgNFTBox {
+    width: 70%;
+    margin: auto;
+}
+
+.NFTitem img {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    margin: auto;
+}
+
+.all-claim-btn {
+    padding: 9px 50px;
+    font-size: 25px;
+    font-family: "Titan One", Sans-serif;
+    font-weight: inherit;
+    background: #000;
+    color: #ffe14b;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.all-claim-btn:hover {
+    background-color: #55595c;
+}
+
+.nftstake-btn {
+    padding: 7px 30px;
+    font-size: 25px;
+    font-family: "Titan One", Sans-serif;
+    font-weight: inherit;
+    background: #000;
+    color: #ffe14b;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.nftstake-btn:hover {
+    background-color: #55595c;
+}
+
+.NFTitem {
+    height: 500px;
+}
+
+.Text-stake {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stakeNFT-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.stakeNFT-text p {
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Titan One", Sans-serif;
+    margin: 10px 0;
+}
+
+@media (min-width: 769px) {
+    .imgNFTBox {
+        width: 80%;
+        margin-top: 70px;
+    }
+
+    .NFTitem img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .NFTitem {
+        height: 400px;
+    }
+}
+
+@media (min-width: 900px) {
+    .imgNFTBox {
+        width: 80%;
+        margin-top: 70px;
+    }
+
+    .NFTitem img {
+        width: 350px;
+        height: 350px;
+        margin-bottom: 30px;
+    }
+
+    .NFTitem {
+        height: 450px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .imgNFTBox {
+        width: 60%;
+        margin-top: 70px;
+    }
+
+    .NFTitem img {
+        width: 350px;
+        height: 350px;
+        margin-bottom: 30px;
+    }
+
+    .NFTitem {
+        height: 450px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .imgNFTBox {
+        width: 60%;
+        margin-top: 0px;
+    }
+
+    .NFTitem img {
+        width: 400px;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .NFTitem {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stakeContainer {
+        display: block;
+    }
+
+    .joinBox {
+        width: 100%;
+        border: none;
+        padding: 20px 5px;
+    }
+
+    .joinBox h1 {
+        font-size: 25px;
+    }
+
+    .joinBox p {
+        font-size: 12px;
+        font-weight: bold;
+        margin: 0 10px 30px;
+        line-height: 20px;
+    }
+
+    .stakeBox {
+        width: 100%;
+    }
+
+    .joinBox a {
+        padding: 12px 30px;
+    }
+
+    .stakeText {
+        font-size: 19px;
+        text-align: center;
+        padding: 10px 10px;
+    }
+
+    .stakeNFT-text p {
+        color: #000;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: "Titan One", Sans-serif;
+        margin: 10px 0;
+    }
+
+    .imgNFTBox {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .NFTitem img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .NFTitem {
+        height: auto;
+    }
+
+    .nftstake-btn {
+        padding: 3px 30px;
+        font-size: 25px;
+    }
+
+    .all-claim-btn {
+        margin: 20px 0;
+    }
+}
+
+/* NFT slider style */
+.nftsliderContainer {
+    margin: 20px 0;
+}
+
+.nftsliderContainer .slick-arrow {
+    display: none !important;
+}
+
+.Ritem img {
+    width: 100%;
+    height: auto;
+}
+
+/* RoadMap style */
+.roadmapContainer {
+    display: flex;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+.roadmapBox {
+    width: 50%;
+    border-right: 3px solid #000;
+}
+
+.ownBox {
+    width: 50%;
+    padding: 0px 10px;
+}
+
+.innerroadmap {
+    margin: 70px 5px;
+}
+
+.innerroadmap h1 {
+    font-family: "Titan One", Sans-serif;
+    text-decoration: underline;
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: inherit;
+    color: #000;
+}
+
+.roadmapContent {
+    margin: 20px 0;
+    display: flex;
+}
+
+.roadmapLeft {
+    width: 50%;
+    border-right: 3px solid #000;
+    padding: 0px 10px;
+}
+
+.roadmapLeft h2 {
+    font-family: "Titan One", Sans-serif;
+    font-size: 25px;
+    line-height: 1.4;
+    font-weight: inherit;
+    color: #000;
+}
+
+.roadmapLeft p {
+    font-family: "Exo 2", Sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+}
+
+.roadmapRight {
+    width: 50%;
+    padding: 0px 10px;
+}
+
+.roadmapRight h2 {
+    font-family: "Titan One", Sans-serif;
+    font-size: 25px;
+    line-height: 1.4;
+    font-weight: inherit;
+    color: #000;
+}
+
+.roadmapRight p {
+    font-family: "Exo 2", Sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+}
+
+.cc-launch,
+.staking-economy {
+    margin-bottom: 80px;
+}
+
+.cc-launch img:hover {
+    animation-name: roadmap-image-animation;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.staking-economy img:hover {
+    animation-name: roadmap-image-animation;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.cc-phase2 img:hover {
+    animation-name: roadmap-image-animation;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.chick-factory img:hover {
+    animation-name: roadmap-image-animation;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes roadmap-image-animation {
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.innerownBox {
+    margin: 70px 8px 8px 8px;
+}
+
+.innerownBox h1 {
+    font-family: "Titan One", Sans-serif;
+    text-decoration: underline;
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: inherit;
+    margin: 40px;
+    color: #000;
+}
+
+.ownChild {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 3px solid #000;
+    margin: 20px 5px;
+}
+
+.innerown-img {
+    width: 30%;
+}
+
+.innerown-img img {
+    width: -webkit-fill-available;
+    transition-duration: 0.3s;
+}
+
+.innerown-img img:hover {
+    transform: scale(1.1);
+}
+
+.innerown-text {
+    text-align: initial;
+}
+
+.innerown-text h2 {
+    font-family: "Titan One", Sans-serif;
+    font-size: 25px;
+    line-height: 1.4;
+    font-weight: inherit;
+    margin: 0;
+    color: #000;
+}
+
+.innerown-text p {
+    font-family: "Exo 2", Sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+    line-height: 1.85714285714286;
+    margin-top: 0;
+}
+
+.chatbtnBox a {
+    text-decoration: none;
+    background-color: black;
+    border-radius: 100px;
+    color: #ffe14b;
+    font-size: 18px;
+    font-family: "Titan One", Sans-serif;
+    padding: 15px 30px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin: 15px 0 20px 0;
+}
+
+@media (max-width: 1024px) {
+    .roadmapBox {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .roadmapContainer {
+        display: block;
+    }
+
+    .roadmapBox {
+        width: 100%;
+        border-right: none;
+    }
+
+    .innerroadmap {
+        margin: 60px 5px -30px 5px;
+    }
+
+    .roadmapContent {
+        margin: 20px 0 0 0;
+    }
+
+    .ownBox {
+        width: 100%;
+    }
+
+    .innerownBox {
+        border-top: 3px solid;
+    }
+
+    .ownChild {
+        display: block;
+        justify-content: center;
+        border-bottom: 3px solid #000;
+        margin: 20px 9px;
+        padding-bottom: 15px;
+    }
+
+    .innerown-img {
+        width: 40%;
+        margin: auto;
+    }
+
+    .innerown-text {
+        text-align: center;
+    }
+}
+
+/* cluckyverse style */
+
+.cluckverseContainer {
+    border-bottom: 3px solid #000;
+    padding-bottom: 12px;
+}
+
+.verseBox {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.verse-title {
+    position: relative;
+}
+
+.flow {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: -webkit-fill-available;
+    transform: rotate(180deg);
+    margin: auto;
+}
+
+.verse-content {
+    position: relative;
+}
+
+.verse-svg {
+    position: absolute;
+    width: -webkit-fill-available;
+}
+
+.verse-title h1 {
+    font-family: "Titan One", Sans-serif;
+    font-size: 50px;
+    color: #000;
+    margin: 0px;
+    padding: 16px 0 30px 0;
+}
+
+.pixelVerse,
+.Verse2D,
+.Verse3D {
+    width: 33%;
+    padding: 10px;
+}
+
+.pixelVerse img:hover,
+.Verse2D img:hover,
+.Verse3D img:hover {
+    transform: scale(0.9);
+}
+
+.pixelVerse img,
+.Verse2D img,
+.Verse3D img {
+    width: 70%;
+    transition-duration: 0.3s;
+}
+
+.pixelVerse h2,
+.Verse2D h2,
+.Verse3D h2 {
+    font-family: "Titan One", Sans-serif;
+    font-size: 25px;
+    line-height: 1.4;
+    font-weight: inherit;
+    color: #000;
+    margin-top: 0;
+}
+
+.pixelVerse p,
+.Verse2D p,
+.Verse3D p {
+    font-family: "Exo 2", Sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.8;
+}
+
+@media (max-width: 1000px) {
+    .flow {
+        bottom: -16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .verseBox {
+        display: block;
+    }
+
+    .verse-title h1 {
+        font-size: 40px;
+    }
+
+    .pixelVerse,
+    .Verse2D,
+    .Verse3D {
+        width: 95%;
+        margin: 0 10px;
+    }
+
+    .founder,
+    .artist,
+    .dev {
+        width: 95%;
+        margin: 0 10px;
+    }
+
+    .flow {
+        bottom: -1px;
+    }
+
+    .flow img {
+        height: 18px;
+    }
+}
+
+/* Team style */
+.teamContainer {
+    border-bottom: 3px solid #000;
+    padding-bottom: 20px;
+}
+
+.teamContainer h1 {
+    font-family: "Titan One", Sans-serif;
+    font-size: 50px;
+    text-decoration: underline;
+    font-weight: inherit;
+    color: #000;
+    margin: 20px 0 30px 0;
+}
+
+.team-list img {
+    border: 3px solid #000;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.team-twitter {
+    width: fit-content;
+    height: fit-content;
+}
+
+.team-twitter img{
+    width: 60px !important; 
+    height: 60px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.team-text {
+    margin: 0px;
+}
+
+.founder,
+.artist,
+.dev {
+    padding: 10px;
+}
+
+.founder img,
+.artist img,
+.dev img {
+    width: 70%;
+    transition-duration: 0.3s;
+}
+
+.founder h2,
+.artist h2,
+.dev h2 {
+    font-family: "Titan One", Sans-serif;
+    font-size: 25px;
+    line-height: 1.4;
+    font-weight: inherit;
+    color: #000;
+    margin-top: 20px;
+
+}
+
+.founder p,
+.artist p,
+.dev p {
+    font-family: "Exo 2", Sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.8;
+}
+
+/* FAQ style */
+
+.faqContainer h1 {
+    font-family: "Titan One", Sans-serif;
+    font-size: 50px;
+    text-decoration: underline;
+    font-weight: inherit;
+    color: #000;
+    margin: 20px 0 30px 0;
+}
+
+/* .accordion {
+    margin: 10px;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-top: 3px solid;
+}
+.accordion-content {
+    text-align: start;
+    font-size: 22px;
+    font-family: "Exo 2", Sans-serif;
+    font-weight: bold;
+    color: #000;
+    padding: 30px 20px 50px 20px;
+    background: transparent;
+    border-bottom: 3px solid;
+    line-height: 1.8;
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 30px;
+    background: transparent;
+    border-bottom: 3px solid #000;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.accordionTitle {
+    text-decoration: underline;
+    font-family: "Titan One", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1;
+    text-align: initial;
+} */
+
+
+/* footer style */
+.footerContainer {
+    display: flex;
+    align-items: center;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+.footer-text {
+    width: 50%;
+    border-right: 3px solid #000;
+}
+
+.footer-text p {
+    font-size: 30px;
+    font-family: "Titan One", Sans-serif;
+    line-height: 1.3;
+    font-weight: inherit;
+    color: #000;
+    margin: 10px;
+}
+
+.footer-contact {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contact a {
+    color: #000
+}
+
+.footer-contact span {
+    margin: 3px;
+    border: 3px solid;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    width: max-content;
+    height: fit-content;
+}
+
+@media (max-width: 768px) {
+    .footerContainer {
+        display: block;
+    }
+
+    .footer-text {
+        width: 100%;
+        border-right: none;
+    }
+
+    .footer-contact {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-text p {
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Accordion STYLE */
+.accordion {
+    margin: 10px;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    border-top: 3px solid #000;
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 30px;
+    background: transparent;
+    border-bottom: 3px solid #000;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.accordionTitle {
+    text-decoration: underline;
+    font-family: "Titan One", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1;
+    text-align: initial;
+}
+
+.accordion-con-item {
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(1, 0, 1, 0);
+    height: auto;
+    max-height: 9999px;
+}
+
+.accordion-con-item.collapsed {
+    max-height: 0;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.accordion-content {
+    text-align: start;
+    font-size: 22px;
+    font-family: "Exo 2", Sans-serif;
+    font-weight: bold;
+    color: #000;
+    padding: 30px 20px;
+    background: transparent;
+    border-bottom: 3px solid #000;
+    line-height: 1.8;
+}
